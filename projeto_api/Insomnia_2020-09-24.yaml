@@ -1,0 +1,465 @@
+_type: export
+__export_format: 4
+__export_date: 2020-09-25T02:28:35.919Z
+__export_source: insomnia.desktop.app:v2020.4.0
+resources:
+  - _id: req_900cc937f897459bbb8b6b68a115f90f
+    parentId: fld_7e154ade062b4b7c94747c09866fbc7d
+    modified: 1600999698337
+    created: 1600916922155
+    url: http://localhost:8000/webapi/fluxo-de-caixa/2019-10-15/2021-05-01/6
+    name: Fluxo de caixa
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1600916922155
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_7e154ade062b4b7c94747c09866fbc7d
+    parentId: wrk_c80a6aeac22d41d194d27bf1b5dd48c3
+    modified: 1600999686896
+    created: 1600916913248
+    name: Fluxo
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1600916913248
+    _type: request_group
+  - _id: wrk_c80a6aeac22d41d194d27bf1b5dd48c3
+    parentId: null
+    modified: 1598576391926
+    created: 1598576391926
+    name: Python
+    description: ""
+    scope: null
+    _type: workspace
+  - _id: req_d88dd8c270424cbebe68f873a187b437
+    parentId: fld_7e154ade062b4b7c94747c09866fbc7d
+    modified: 1600999735957
+    created: 1600999712881
+    url: http://localhost:8000/webapi/fluxo-previsto/2019-10-15/
+    name: Fluxo previsto
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1600914923178
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7ce62d6c880b44ef8e1da138ead4dd70
+    parentId: fld_7e154ade062b4b7c94747c09866fbc7d
+    modified: 1601000034656
+    created: 1601000016423
+    url: http://localhost:8000/webapi/fluxo-realizado/2019-10-15/
+    name: Fluxo realizado
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1600913923689.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_dbe0d996064b417aa647de26ca4ba943
+    parentId: fld_3d85446eb4b844929b8905de5aaf5a4b
+    modified: 1600912940023
+    created: 1600912924128
+    url: http://localhost:8000/webapi/saldoinicial
+    name: Saldo Inicial
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1600912924201
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_3d85446eb4b844929b8905de5aaf5a4b
+    parentId: wrk_c80a6aeac22d41d194d27bf1b5dd48c3
+    modified: 1600912913287
+    created: 1600912913287
+    name: Saldo
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1600912913287
+    _type: request_group
+  - _id: req_1070d914daa9475f99e22fe1d3d1d2da
+    parentId: fld_3d85446eb4b844929b8905de5aaf5a4b
+    modified: 1600912985743
+    created: 1600912949317
+    url: http://localhost:8000/webapi/saldoinicial/
+    name: Saldo Inicial
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"saldo": "5000.00"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_1afe6ca398264ac392fc29d482f4de76
+    authentication: {}
+    metaSortKey: -1600911427200
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7d812fbdcd034cdb9e5d6a59464df3b6
+    parentId: fld_a3a32c1a4769487a891bbb3fe6b08b50
+    modified: 1600916899818
+    created: 1600909930199
+    url: http://localhost:8000/webapi/relatorio-data-vencimento/2020-10-01
+    name: Relatório por vencimento
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1600909930199
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_a3a32c1a4769487a891bbb3fe6b08b50
+    parentId: wrk_c80a6aeac22d41d194d27bf1b5dd48c3
+    modified: 1600909899850
+    created: 1600909899850
+    name: Relatórios
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1600909899850
+    _type: request_group
+  - _id: req_023e24b2482b4bfba077c7e0b60b0278
+    parentId: fld_b4b28d032b0e420ebe3fcd10bb90edbc
+    modified: 1601000515952
+    created: 1600818374790
+    url: http://localhost:8000/webapi/contaspagar/
+    name: Contas à pagar
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        	{
+          "data_vencimento": "2020-11-30",
+        	"data_pagamento": "2020-11-10",
+          "valor": "1600.00",
+        	"descricao": "Condomínio do prédio",
+        	"classificacao": 2,
+        	"forma_pagamento": 3,
+        	"situacao": "pago"
+        	}
+    parameters: []
+    headers:
+      - id: pair_3d7fa475287f40db88a6a5eafd7ee9c1
+        name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1600256608739.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_b4b28d032b0e420ebe3fcd10bb90edbc
+    parentId: wrk_c80a6aeac22d41d194d27bf1b5dd48c3
+    modified: 1600833436699
+    created: 1600833364685
+    name: Contas
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1600833418830
+    _type: request_group
+  - _id: req_be962ac0a9b64553a1d26c67b32bd05e
+    parentId: fld_b4b28d032b0e420ebe3fcd10bb90edbc
+    modified: 1600989077390
+    created: 1600819126282
+    url: http://localhost:8000/webapi/contaspagar
+    name: Contas à pagar
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - id: pair_3d7fa475287f40db88a6a5eafd7ee9c1
+        name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1600256608714.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_dac7bde33685421585a4884aa9e0b5ef
+    parentId: fld_b4b28d032b0e420ebe3fcd10bb90edbc
+    modified: 1600833377434
+    created: 1600833325775
+    url: http://localhost:8000/webapi/contasreceber/
+    name: Contas à receber
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - id: pair_3d7fa475287f40db88a6a5eafd7ee9c1
+        name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1600256608702.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d98f9826f33548649b7c5c16b8adb7f5
+    parentId: fld_b4b28d032b0e420ebe3fcd10bb90edbc
+    modified: 1601000588713
+    created: 1600833339763
+    url: http://localhost:8000/webapi/contasreceber/
+    name: Contas à receber
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        	{
+          "data_expectativa": "2021-02-10",
+        	"data_recebimento": null,
+          "valor": "5000.00",
+        	"descricao": "Bônus da empresa",
+        	"classificacao": 6,
+        	"forma_pagamento": 4,
+        	"situacao": "pagar"
+        	}
+    parameters: []
+    headers:
+      - id: pair_3d7fa475287f40db88a6a5eafd7ee9c1
+        name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1600256608689.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_becbce3ca41b49b69915f1b4024ca69f
+    parentId: fld_12cf643551ed468ea41c88f1fd4c3b26
+    modified: 1600833430297
+    created: 1600822593612
+    url: http://localhost:8000/webapi/formapagamento/
+    name: Forma de pagamento
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - id: pair_3d7fa475287f40db88a6a5eafd7ee9c1
+        name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1599556525673.1875
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_12cf643551ed468ea41c88f1fd4c3b26
+    parentId: wrk_c80a6aeac22d41d194d27bf1b5dd48c3
+    modified: 1600833418780
+    created: 1600833418780
+    name: Pagamento
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1600833418780
+    _type: request_group
+  - _id: req_d7f16807c9d746dd99fd007483a31f8f
+    parentId: fld_12cf643551ed468ea41c88f1fd4c3b26
+    modified: 1601000615309
+    created: 1600822583206
+    url: http://localhost:8000/webapi/formapagamento/
+    name: Forma de pagamento
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        	{
+        	"descricao": "Cheque"
+        	}
+    parameters: []
+    headers:
+      - id: pair_3d7fa475287f40db88a6a5eafd7ee9c1
+        name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1599556525623.1875
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3b67ec0e3ce24903abe5c5a62ed6c0e0
+    parentId: fld_19c279bf21d84804b507101152ef7668
+    modified: 1600833403665
+    created: 1600821751367
+    url: http://localhost:8000/webapi/classificacao/
+    name: Classificacao
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - id: pair_3d7fa475287f40db88a6a5eafd7ee9c1
+        name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1600833375287
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_19c279bf21d84804b507101152ef7668
+    parentId: wrk_c80a6aeac22d41d194d27bf1b5dd48c3
+    modified: 1600833412093
+    created: 1600833385789
+    name: Classificação
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1600194945154.0938
+    _type: request_group
+  - _id: req_c3aa2236ec0b4a6bb3eec0f8e7a72716
+    parentId: fld_19c279bf21d84804b507101152ef7668
+    modified: 1601000648629
+    created: 1600821704663
+    url: http://localhost:8000/webapi/classificacao/
+    name: Classificacao
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        	{
+        	"descricao": "Empréstimo"
+        	}
+    parameters: []
+    headers:
+      - id: pair_3d7fa475287f40db88a6a5eafd7ee9c1
+        name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1600833375237
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_c0afea631f5e4a49978f3e09f6f3031be848ca7a
+    parentId: wrk_c80a6aeac22d41d194d27bf1b5dd48c3
+    modified: 1598576392288
+    created: 1598576392288
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1598576392288
+    _type: environment
+  - _id: jar_c0afea631f5e4a49978f3e09f6f3031be848ca7a
+    parentId: wrk_c80a6aeac22d41d194d27bf1b5dd48c3
+    modified: 1598576392307
+    created: 1598576392307
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_f9389aa50bb742e69c817d436636303d
+    parentId: wrk_c80a6aeac22d41d194d27bf1b5dd48c3
+    modified: 1598576391939
+    created: 1598576391939
+    fileName: Python
+    contents: ""
+    contentType: yaml
+    _type: api_spec

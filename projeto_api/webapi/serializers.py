@@ -1,6 +1,11 @@
 from rest_framework import serializers
-from .models import ContasPagar, Classificacao, FormaPagamento, ContasReceber
+from .models import SaldoInicial, ContasPagar, Classificacao, FormaPagamento, ContasReceber
 
+
+class SaldoInicialSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SaldoInicial
+        fields = ('id', 'saldo')
 
 class ContasPagarSerializer(serializers.ModelSerializer):
 

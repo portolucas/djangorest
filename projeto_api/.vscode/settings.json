@@ -1,3 +1,5 @@
 {
-    "python.analysis.cacheFolderPath": "/Documents/PUC/Python/djangorest/meuprojeto/bin/python"
+    "python.analysis.cacheFolderPath": "/Documents/PUC/Python/djangorest/meuprojeto/bin/python",
+    "python.pythonPath": "/path/to/your/venv/bin/python",
+
 }
